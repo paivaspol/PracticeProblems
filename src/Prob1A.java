@@ -15,12 +15,12 @@ public class Prob1A {
     public static void main(String[] args) throws Exception {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         String[] inputLine = input.readLine().split(" ");
-        int m = Integer.valueOf(inputLine[0]);
-        int n = Integer.valueOf(inputLine[1]);
-        int a = Integer.valueOf(inputLine[2]);
-        int totalWidth = (int) Math.ceil(1.0 * m / a);
-        int totalHeight = (int) Math.ceil(1.0 * n / a);
-        int result = totalHeight * totalWidth;
+        long m = Long.valueOf(inputLine[0]);
+        long n = Long.valueOf(inputLine[1]);
+        long a = Long.valueOf(inputLine[2]);
+        long totalWidth = (long) Math.ceil(1.0 * m / a);
+        long totalHeight = (long) Math.ceil(1.0 * n / a);
+        long result = totalHeight * totalWidth;
         System.out.println(result);
     }
 }
